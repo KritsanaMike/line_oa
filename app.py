@@ -4,6 +4,7 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
+
 app = Flask(__name__)
 
 # Set LINE Messaging API credentials
@@ -62,6 +63,8 @@ def get_inactive_duration(oa):
     # and calculate the inactive duration
     # Return the duration in seconds
     pass
+
+# from line_chatbot import app
 
 if __name__ == "__main__":
     app.run()
